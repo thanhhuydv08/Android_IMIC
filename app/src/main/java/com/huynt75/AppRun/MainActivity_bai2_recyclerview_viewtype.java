@@ -130,9 +130,7 @@ public class MainActivity_bai2_recyclerview_viewtype extends AppCompatActivity {
                 add.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        description =editTextDesr.getText().toString();
-                        index = Integer.parseInt(editTextIndex.getText().toString());
-                        image = R.mipmap.blackberry;
+                        PullDataAlertDialog();
                         arrayList.add(index,new Data_bai2(description,image));
                         adapter_bai2.notifyItemInserted(index);
                         dialog_2.cancel();// sau khi Alertdialog show va thao tac bam nut add xong thi canlel chi de laij view chinh
@@ -142,10 +140,16 @@ public class MainActivity_bai2_recyclerview_viewtype extends AppCompatActivity {
                 break;
             }
             case R.id.menu_Remove:{
+                PullDataAlertDialog();
+                arrayList.remove(index);
+                adapter_bai2.notifyItemRemoved(index);
+                dialog_2.cancel();
                 break;
             }
             case R.id.menu_Updates:{
-
+                PullDataAlertDialog();
+               arrayList.set(index,new Data_bai2(description,image));
+               adapter_bai2.notifyItemInserted(index);
                 break;
             }
             case R.id.menu_setting:{
@@ -171,6 +175,12 @@ public class MainActivity_bai2_recyclerview_viewtype extends AppCompatActivity {
         editTextIndex=viewAlertDialog.findViewById(R.id.edt_bai2_three_3);
         add =viewAlertDialog.findViewById(R.id.btn_bai2_three_1);
         editTextDesr = viewAlertDialog.findViewById(R.id.edt_bai2_three_2);
+    }
+    public void PullDataAlertDialog(){
+        description = editTextDesr.getText().toString();
+        index = Integer.parseInt(editTextIndex.getText().toString());
+        image = R.mipmap.blackberry;
+
     }
 }
 
