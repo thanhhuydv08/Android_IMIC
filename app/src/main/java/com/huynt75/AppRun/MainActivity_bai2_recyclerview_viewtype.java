@@ -162,7 +162,7 @@ public class MainActivity_bai2_recyclerview_viewtype extends AppCompatActivity {
                     public void onClick(View v) {
                         PullDataAlertDialog();
                         arrayList.set(index,new Data_bai2(description,image));
-                        adapter_bai2.notifyItemInserted(index);
+                        adapter_bai2.notifyItemChanged(index);
                         dialog_2.cancel();
                     }
                 });
