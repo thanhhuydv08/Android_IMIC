@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_bai2_three"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout
+
+  android:gravity="center"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/txt_bai2_three_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AddImage :" />
+  <ImageView
+      android:id="@+id/img_bai2_three"
+      android:layout_toRightOf="@id/txt_bai2_three_1"
+      android:layout_marginLeft="5dp"
+      android:src="@mipmap/blackberry"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/txt_bai2_three_2"
+        android:layout_below="@+id/txt_bai2_three_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :" />
+    <EditText
+        android:textSize="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txt_bai2_three_1"
+        android:id="@+id/edt_bai2_three_2"
+        android:layout_toRightOf="@id/txt_bai2_three_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="index :"
+        android:layout_below="@id/txt_bai2_three_2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_bai2_three_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/txt_bai2_three_2"
+        android:layout_alignStart="@id/edt_bai2_three_2"
+        android:id="@+id/edt_bai2_three_3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@color/Tomato"
+        android:text="ADD"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_bai2_three_3"
+        android:id="@+id/btn_bai2_three_1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+
+</RelativeLayout>
+</LinearLayout>

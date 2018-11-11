@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huynt75.AppRun.MainActivity_example_event">
+
+    <!--&lt;!&ndash;ghi chu thuoc tinh weigh &ndash;&gt;-->
+    <!--2. neu dung garvity thi dung tat ca cho cac doi tuong con  cua no dan nen cac nut se chong len nhau-->
+    <!--android:layout_gravity="center"-->
+    <!--can chinh button cho doi tuong layout gravity-->
+    <EditText
+        android:id="@+id/edt_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To" />
+
+    <EditText
+        android:id="@+id/edt_sub"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:hint="Subject" />
+
+    <EditText
+        android:id="@+id/edt_mes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Mesagese" />
+
+    <LinearLayout
+        android:id="@+id/lt_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightBlue"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SendMail" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btn_xoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xoa" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_disp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <!--thay vi cac doi tuong deu co weigh thi chi can them android:layout_weight="1" tai edittext thu 3-->
+
+</LinearLayout>

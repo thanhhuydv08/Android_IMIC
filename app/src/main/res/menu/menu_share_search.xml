@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:title="Setting"
+    android:id="@+id/menu_setting"
+    android:icon="@android:drawable/ic_menu_info_details"
+    app:showAsAction="always"
+    />
+    <!--app:showAsAction="always" hien thi ra action bar-->
+ <item android:title="Share"/>
+<item android:title="Search"/>
+ <item android:title="Help">
+    <menu>
+     <item android:title="java"/>
+     <item android:title="android"/>
+    </menu>
+    </item>
+
+</menu>
+
+<!--muốn dung các thằng này hay menu trong res nói rieng thi tai class java chi can them-->
+    <!--//tao menu trong action bar-->
+    <!--@Override-->
+    <!--public boolean onCreateOptionsMenu(Menu menu) {-->
+    <!--getMenuInflater().inflate(R.menu.menu_share_search,menu);-->
+    <!--return super.onCreateOptionsMenu(menu);-->
+    <!--//        menu giong nhu view khi overview no da co gia tri roi-->
+    <!--}-->

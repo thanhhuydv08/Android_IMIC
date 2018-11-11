@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/LemonChiffon"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="VUI LÒNG ĐIỀN ĐẦY ĐỦ CÁC THÔNG TIN DƯỚI"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txt_hvt"
+        android:layout_below="@+id/txt_title"
+        android:text="Họ và tên :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_hvt"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/txt_hvt"
+        android:paddingBottom="5dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_hvt"
+        android:layout_marginTop="36dp"
+        android:text="Username :" />
+    <EditText
+      android:layout_marginTop="5dp"
+        android:id="@+id/edt_user"
+        android:paddingBottom="6dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/edt_hvt"
+        android:layout_toRightOf="@+id/txt_hvt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txt_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_user"
+        android:layout_marginTop="28dp"
+        android:text="Password :" />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:paddingBottom="6dp"
+        android:textSize="20dp"
+        android:id="@+id/edt_pass"
+        android:layout_below="@+id/edt_user"
+        android:layout_toRightOf="@+id/txt_hvt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txt_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pass"
+        android:layout_marginTop="31dp"
+        android:text="Emai :" />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:paddingBottom="6dp"
+        android:textSize="20dp"
+        android:id="@+id/edt_mail"
+        android:layout_below="@+id/edt_pass"
+        android:layout_toRightOf="@+id/txt_hvt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+     android:layout_below="@+id/edt_mail"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:text="SIGIN UP"
+        android:textSize="10dp"
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+        <Button
+            android:text="EXIT"
+            android:textSize="10dp"
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</RelativeLayout>

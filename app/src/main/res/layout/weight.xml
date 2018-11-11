@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="4"
+    tools:context="com.huynt75.AppRun.MainActivity_test_1">
+
+<!--&lt;!&ndash;ghi chu thuoc tinh weigh &ndash;&gt;-->
+    <!--2. neu dung garvity thi dung tat ca cho cac doi tuong con  cua no dan nen cac nut se chong len nhau-->
+    <!--android:layout_gravity="center"-->
+    <!--can chinh button cho doi tuong layout gravity-->
+    <Button
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Chao ban 1" />
+
+    <!--padding la so voi vien cua lay out con marging la so voi cac doi tuong ben trong-->
+    <Button
+        android:layout_weight="1"
+        android:text="Chao ban 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_weight="1"
+        android:text="Chao ban 3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_weight="1"
+        android:text="Chao ban 4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

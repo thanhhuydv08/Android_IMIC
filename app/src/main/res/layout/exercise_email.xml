@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huynt75.AppRun.MainActivity_test_1">
+
+<!--&lt;!&ndash;ghi chu thuoc tinh weigh &ndash;&gt;-->
+    <!--2. neu dung garvity thi dung tat ca cho cac doi tuong con  cua no dan nen cac nut se chong len nhau-->
+    <!--android:layout_gravity="center"-->
+    <!--can chinh button cho doi tuong layout gravity-->
+<EditText
+    android:hint="To"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Subject"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Mesagese"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/layout_line_style"/>
+    <include layout="@layout/layout_line_style"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        style="@style/Sendmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_for_btn_sendmail"
+        android:text="SendMail"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        android:background="@drawable/bg_for_btn_sendmail"
+        android:text="SendMail"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        android:background="@drawable/bg_for_btn_sendmail"
+        android:text="SendMail"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        android:background="@drawable/bg_for_btn_sendmail"
+        android:text="SendMail"
+
+        />
+
+    </LinearLayout>
+<!--thay vi cac doi tuong deu co weigh thi chi can them android:layout_weight="1" tai edittext thu 3-->
+
+</LinearLayout>
