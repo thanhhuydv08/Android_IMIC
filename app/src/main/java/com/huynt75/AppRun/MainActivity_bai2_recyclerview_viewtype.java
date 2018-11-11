@@ -140,16 +140,33 @@ public class MainActivity_bai2_recyclerview_viewtype extends AppCompatActivity {
                 break;
             }
             case R.id.menu_Remove:{
-                PullDataAlertDialog();
-                arrayList.remove(index);
-                adapter_bai2.notifyItemRemoved(index);
-                dialog_2.cancel();
+                AddAlertDialog();
+                AnhXaLayoutAlertDialog();
+                add.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        PullDataAlertDialog();
+                        arrayList.remove(index);
+                        adapter_bai2.notifyItemRemoved(index);
+                        dialog_2.cancel();
+                    }
+                });
+
                 break;
             }
             case R.id.menu_Updates:{
-                PullDataAlertDialog();
-               arrayList.set(index,new Data_bai2(description,image));
-               adapter_bai2.notifyItemInserted(index);
+                AddAlertDialog();
+                AnhXaLayoutAlertDialog();
+                add.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        PullDataAlertDialog();
+                        arrayList.set(index,new Data_bai2(description,image));
+                        adapter_bai2.notifyItemInserted(index);
+                        dialog_2.cancel();
+                    }
+                });
+
                 break;
             }
             case R.id.menu_setting:{
